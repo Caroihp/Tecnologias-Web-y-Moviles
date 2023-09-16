@@ -1,23 +1,22 @@
-
 //Nota 1
 let nota1 = parseFloat(prompt("Ingrese la nota 1: ", ''));
   if (isNaN(nota1) || nota1 < 1 || nota1 > 7) {
     alert("La nota 1 no es valida. Debe ser un número entre 1 y 7");
-    return;
+    //return;
   }
 
 //Nota 2
 let nota2 = parseFloat(prompt("Ingrese la nota 2: ", ''));
   if (isNaN(nota2) || nota2 < 1 || nota2 > 7) {
     alert("La nota 1 no es valida. Debe ser un número entre 1 y 7");
-    return;
+    //return;
   }
 
 //Nota 3
 let nota3 = parseFloat(prompt("Ingrese la nota 3: ", ''));
   if (isNaN(nota3) || nota3 < 1 || nota3 > 7) {
     alert("La nota 1 no es valida. Debe ser un número entre 1 y 7");
-    return;
+    //return;
   }
   
 //Promedio
