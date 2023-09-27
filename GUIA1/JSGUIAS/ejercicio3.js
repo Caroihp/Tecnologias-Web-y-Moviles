@@ -35,9 +35,13 @@ var contrasena = prompt("Ingrese una contraseña que cumpla con los siguientes r
                         "- Debe contener al menos una letra mayúscula.\n" +
                         "- Debe contener al menos un número.\n" +
                         "- Debe incluir al menos un carácter especial, como: !@#$%^&*()_+{}[]:;<>,.?~\\-", '');
+while (!verificarContrasena(contrasena)) {
+    alert("La contraseña no es valida, no cumple con los requisitos de seguridad");
+    contrasena = prompt("Ingrese una contraseña que cumpla con los siguientes requisitos:\n" +
+                        "- Debe tener al menos 8 caracteres de longitud.\n" +
+                        "- Debe contener al menos una letra mayúscula.\n" +
+                        "- Debe contener al menos un número.\n" +
+                        "- Debe incluir al menos un carácter especial, como: !@#$%^&*()_+{}[]:;<>,.?~\\-", '');
+}         
 
-if (verificarContrasena(contrasena)) {
-    alert("La contraseña es válida.");
-} else {
-    alert("La contraseña no cumple con los requisitos de seguridad.");
-}
+alert("La contraseña es válida.");
