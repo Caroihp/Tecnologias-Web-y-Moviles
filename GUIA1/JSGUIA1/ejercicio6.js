@@ -51,7 +51,6 @@ for (let i=0; i<inventario.length;i++){
     let cont=0
     if (cant<1000){
         critic.push(nombre);
-        //alert(`el stock de ${nombre} es crítico`); *OPCIONAL*
         cont+=1
     }
 }
@@ -67,8 +66,7 @@ alert('Tupla final del inventario es -->');
 
 for (let i = 0; i < inventario.length; i++) {
   let producto = inventario[i];
-  alert(`Producto ${i + 1}:\n
-         Nombre: ${producto.nombre}\n
+  alert(`Nombre: ${producto.nombre}\n
          Precio: ${producto.precio}\n
          Stock: ${producto.stock}`);
 }
