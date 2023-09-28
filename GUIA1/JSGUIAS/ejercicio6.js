@@ -7,7 +7,7 @@
 //superior a 1000 unidades, el programa mostrará un mensaje que indique que el inventario
 //está en buen estado.
 
-let inventario=[];//Crearemos un arreglo para almacenar los productos
+let inventario=[]; //Crearemos un arreglo para almacenar los productos
 
 //Ahora una función para representar cada producto que se pueda ingresar.      
 function productos(){                   
