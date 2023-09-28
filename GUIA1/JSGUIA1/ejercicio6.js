@@ -7,7 +7,7 @@
 //superior a 1000 unidades, el programa mostrará un mensaje que indique que el inventario
 //está en buen estado.
 
-let inventario=[]; //Crearemos un arreglo para almacenar los productos
+let inventario=[];//Crearemos un arreglo para almacenar los productos
 
 //Ahora una función para representar cada producto que se pueda ingresar.      
 function productos(){                   
@@ -30,7 +30,6 @@ function productos(){
       alert("El stock no es válido");
       product.stock=parseInt(prompt("Ingrese el stock del producto: "));
     }
-
     inventario.push(product);
 }
 
@@ -39,6 +38,7 @@ const ingreso = prompt('¿Cuántos productos deseas ingresar?: ', 1);
 
 for (let i = 0; i < ingreso; i++) {
   productos();
+  alert(`El producto ha sido ingresado correctamente`)
 }
 
 //luego de haberlos ingresados, recorreremos el arreglo donde se encuentra los productos para saber
@@ -53,6 +53,7 @@ for (let i=0; i<inventario.length;i++){
         critic.push(nombre);
         cont+=1
     }
+
 }
 
 let critico=critic.join(', ');
@@ -66,7 +67,8 @@ alert('Tupla final del inventario es -->');
 
 for (let i = 0; i < inventario.length; i++) {
   let producto = inventario[i];
-  alert(`Nombre: ${producto.nombre}\n
+  alert(`***PRODUCTO ${i+1}***\n
+        Nombre: ${producto.nombre}\n
          Precio: ${producto.precio}\n
-         Stock: ${producto.stock}`);
+         Stock: ${producto.stock}\n`);
 }
