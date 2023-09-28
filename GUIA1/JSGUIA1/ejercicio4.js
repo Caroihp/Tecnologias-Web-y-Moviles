@@ -1,7 +1,7 @@
 //Solicitar al usuario que ingrese una serie de números separados por comas. Encontrar y
 //mostrar el número más grande entre los números ingresados
 
-const numEntrada = prompt("Ingrese una serie de números separados por comas: ", '');
+let numEntrada = prompt("Ingrese una serie de números separados por comas: ", '');
 while (numEntrada.trim() === '') {
     alert("Por favor, ingresa números válidos.");
     numEntrada = prompt('Ingrese una serie de números separados por comas: ', '');
@@ -12,7 +12,7 @@ const numCadenas = numEntrada.split(',');
 let numGrande = parseFloat(numCadenas[0]);;
 
 for (let i = 1; i < numCadenas.length; i++) {
-    const numero = parseFloat(numCadenas[i]);
+    let numero = parseFloat(numCadenas[i]);
     if (!isNaN(numero) && numero > numGrande) {
         numGrande = numero;
     }
