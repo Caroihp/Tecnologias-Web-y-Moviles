@@ -14,3 +14,6 @@
 //mostrar los resultados solicitados al usuario. Subir Reto N°3 a Ulagos Virtual, dentro de la fecha
 //límite.
 
+function calculoPropina(calcular, billete){
+    
+}
