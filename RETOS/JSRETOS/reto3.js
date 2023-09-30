@@ -14,22 +14,22 @@
 //mostrar los resultados solicitados al usuario. Subir Reto N°3 a Ulagos Virtual, dentro de la fecha
 //límite.
 
-function calcularPropina() {
+function calculoPropina() {
 
-    const montoBoleta = parseFloat(document.getElementById('monto').value);
-    const porcentajePropina = parseFloat(document.getElementById('porcentaje').value);
+    const montoBol = parseFloat(document.getElementById('monto').value);
+    const porcPropina = parseFloat(document.getElementById('porcentaje').value);
 
-    if (isNaN(montoBoleta) || isNaN(porcentajePropina)) {
-        alert("Por favor, ingrese un monto válido y seleccione un porcentaje de propina válido.");
+    if (isNaN(montoBol) || isNaN(porcPropina)) {
+        alert("Ingrese un monto válido y seleccione un porcentaje de propina válido.");
         return;
     }
 
-    const propina = (montoBoleta * porcentajePropina) / 100;
+    const propina = (montoBol * porcPropina) / 100;
 
-    const totalConPropina = montoBoleta + propina;
+    const totalMasPropina = montoBol + propina;
 
     const resultado = `Monto de la Propina: ${propina.toFixed(2)} CLP <br> 
-                       Total a Pagar (con propina): ${totalConPropina.toFixed(2)} CLP`;
+                       Total a Pagar (con propina): ${totalMasPropina.toFixed(2)} CLP`;
     
     document.getElementById('resultado').innerHTML = resultado;
 }
