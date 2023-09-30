@@ -15,23 +15,19 @@
 //límite.
 
 function calcularPropina() {
-    // Obtener el monto total de la boleta y el porcentaje de propina seleccionado
+
     const montoBoleta = parseFloat(document.getElementById('monto').value);
     const porcentajePropina = parseFloat(document.getElementById('porcentaje').value);
 
-    // Validar que el monto sea un número válido y que se haya seleccionado un porcentaje válido
     if (isNaN(montoBoleta) || isNaN(porcentajePropina)) {
         alert("Por favor, ingrese un monto válido y seleccione un porcentaje de propina válido.");
         return;
     }
 
-    // Calcular la propina
     const propina = (montoBoleta * porcentajePropina) / 100;
 
-    // Calcular el total a pagar incluyendo la propina
     const totalConPropina = montoBoleta + propina;
 
-    // Mostrar el resultado en pantalla
-    const resultado = `Monto de la Propina: CLP ${propina.toFixed(2)}<br>Total a Pagar (con propina): CLP ${totalConPropina.toFixed(2)}`;
+    const resultado = `Monto de la Propina: ${propina.toFixed(2)} CLP <br> Total a Pagar (con propina): ${totalConPropina.toFixed(2)} CLP`;
     document.getElementById('resultado').innerHTML = resultado;
 }
