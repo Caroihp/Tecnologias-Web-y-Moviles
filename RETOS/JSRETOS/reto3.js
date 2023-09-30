@@ -28,6 +28,8 @@ function calcularPropina() {
 
     const totalConPropina = montoBoleta + propina;
 
-    const resultado = `Monto de la Propina: ${propina.toFixed(2)} CLP <br> Total a Pagar (con propina): ${totalConPropina.toFixed(2)} CLP`;
+    const resultado = `Monto de la Propina: ${propina.toFixed(2)} CLP <br> 
+                       Total a Pagar (con propina): ${totalConPropina.toFixed(2)} CLP`;
+    
     document.getElementById('resultado').innerHTML = resultado;
 }
