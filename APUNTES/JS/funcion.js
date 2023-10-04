@@ -30,4 +30,4 @@ function mostarInstitucion(){
 }
 
 mostarInstitucion();
-alert(institucion);
+alert(institucion); //Ulagos, se mantiene, la funcion no accedio a la variable externa
