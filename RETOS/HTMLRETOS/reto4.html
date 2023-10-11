@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora IMC</title>
+</head>
+<body>
+    <h1> Calculadora de IMC </h1>
+    <label for="nombre"> Nombre: </label>
+    <input type="text" id="nombre" placeholder="Ingrese su nombre"><br>
+    <br>
+    <label for="peso"> Peso(Kg): </label>
+    <input type="number" id="peso" placeholder="Ingrese su peso"><br>
+    <br>
+    <label for="altura"> Altura(m): </label>
+    <input type="number" id="altura" placeholder="Ingrese su altura"><br>
+    <br>
+    <label for="edad"> Edad: </label>
+    <input type="number" id="edad" placeholder="Ingrese su edad"><br>
+    <br>
+    <label for="genero"> Genero: </label>
+    <select id="genero">
+        <option value="masculino">Masculino</option>
+        <option value="femenino">Femenino</option>
+    </select><br>
+    <br>
+    <label for="actividadfisica"> Actividad Fisica: </label>
+    <select id="actividadfisica">
+        <option value="1">Sedentario</option>
+        <option value="2">Moderado</option>
+        <option value="3">Activo</option>
+    </select><br>
+    <br>
+
+    <button onclick="calculoIMC()">Calcular</button><br>
+
+    <h1 id="nombre">Resultados para</h1>
+
+    <label for="IMC"> IMC: </label><br>
+    <label id="IMCF"></label><br>
+    <br>
+    <label for="CLAS"> Clasificación: </label><br>
+    <br>
+    <label for="GED"> Gasto Energético Diario: </label><br>
+    <br>
+    <label for="EN"> Estado Nutricional: </label>
+
+
+    <script src="../JSRETOS/reto4.js"></script>
+</body>
+</html>
