@@ -2,15 +2,10 @@ function calculoIMC(){
     var pesoPersona = parseFloat(document.getElementById('peso').value);
     var alturaPersona = parseFloat(document.getElementById('altura').value);
     var actividadFisica = parseFloat(document.getElementById('actividadfisica').value);
-    
-    if (isNaN(pesoPersona) || isNaN(alturaPersona)) {
-        alert("Ingrese un peso y altura válida.");
-        return;
-    }
+    var nombre = document.getElementById('nombre').value;
 
     // Calcular IMC
     var imc = pesoPersona / (alturaPersona * alturaPersona);
-    document.getElementById('IMCF').innerHTML = imc;
 
     let clasificacion = '';
     if (imc < 18.5) {
@@ -22,19 +17,29 @@ function calculoIMC(){
     } else {
         clasificacion = 'Obesidad';
     }
-    document.getElementById("CLASF").innerHTML = clasificacion;
 
     // Calcular GED
-    var ged = pesoPersona * actividadFisica;
-    document.getElementById("GEDF").innerHTML = ged.toFixed(2);
-    
+    var ged = imc * actividadFisica;
+
     // Estado Nutricional
-    let estado = '';
+    let estadoNutricional = '';
     if (imc < 18.5 || imc >= 30) {
-        estado = 'Necesita atención especializada';
+        estadoNutricional = 'Necesita atención especializada';
     } else {
-        estado = 'Estado nutricional adecuado';
+        estadoNutricional = 'Estado nutricional adecuado';
     }
-        document.getElementById("ENF").textContent = estado;
+
+    var resultado = `
+    <h2> Resultados para ${nombre}: </h2>
+    IMC: ${imc.toFixed(2)} <br>
+    <br>
+    Clasificación: ${clasificacion} <br>
+    <br>
+    Gasto Energético Diario: ${ged.toFixed(2)} kcal <br>
+    <br>
+    Estado Nutricional: ${estadoNutricional}
+    `;
+
+    document.getElementById("resultado").innerHTML = resultado;
 
 }
