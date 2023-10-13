@@ -4,6 +4,17 @@ function calculoIMC(){
     var actividadFisica = parseFloat(document.getElementById('actividadfisica').value);
     var nombre = document.getElementById('nombre').value;
 
+    // Validaciones:
+    if (pesoPersona <= 0 || alturaPersona <= 0) {
+        alert('Por favor ingrese valores positivos.');
+        return;
+    }
+    
+    if (alturaPersona < 0 || alturaPersona > 3.0) {
+        alert('Por favor ingrese una altura válida.');
+        return;
+    }
+
     //Calcular IMC
     var imc = pesoPersona / (alturaPersona * alturaPersona);
 
