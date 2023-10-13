@@ -4,9 +4,10 @@ function calculoIMC(){
     var actividadFisica = parseFloat(document.getElementById('actividadfisica').value);
     var nombre = document.getElementById('nombre').value;
 
-    // Calcular IMC
+    //Calcular IMC
     var imc = pesoPersona / (alturaPersona * alturaPersona);
 
+    //Clasificación del IMC
     let clasificacion = '';
     if (imc < 18.5) {
         clasificacion = 'Bajo peso';
@@ -14,16 +15,14 @@ function calculoIMC(){
         clasificacion = 'Peso normal';
     } else if (imc > 24.9) {
         clasificacion = 'Sobrepeso';
-    } else {
-        clasificacion = 'Obesidad';
     }
 
-    // Calcular GED
-    var ged = imc * actividadFisica;
+    //Calcular GED
+    var ged = pesoPersona * actividadFisica;
 
-    // Estado Nutricional
+    //Estado Nutricional
     let estadoNutricional = '';
-    if (imc < 18.5 || imc >= 30) {
+    if (imc < 18.5 || imc > 24.9) {
         estadoNutricional = 'Necesita atención especializada';
     } else {
         estadoNutricional = 'Estado nutricional adecuado';
