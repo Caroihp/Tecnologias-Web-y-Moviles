@@ -40,12 +40,12 @@
       </div>
       <div class="navbar-collapse collapse">
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="#member" class="smoothscroll">Already a member?</a></li>
           <li><a href="#headerwrap" class="smoothscroll">Home</a></li>
           <li><a href="#about" class="smoothscroll">About</a></li>
           <li><a href="#services" class="smoothscroll">Services</a></li>
           <li><a href="#team" class="smoothscroll">Team</a></li>
           <li><a href="#contact" class="smoothscroll">Contact</a></li>
+          <li><a href="#member" class="smoothscroll">Already a member?</a></li>
         </ul>
       </div>
       <!--/.nav-collapse -->
@@ -316,38 +316,40 @@
 
   <!-- / Formulario de Inscripción-->
   <div id="member">
-    <div class="formulario-container">
+    <div class="container">
+      <div class="formulario-container">
           <h2 class="centered">Formulario de Inscripción</h2>
           
-          <label for="nombre">Nombre:</label>
-          <input type="text" id="nombre" placeholder="Nombre">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" placeholder="Nombre">
+            
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" placeholder="Apellido">
 
-          <label for="apellido">Apellido:</label>
-          <input type="text" id="apellido" placeholder="Apellido">
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Email">
 
-          <label for="email">Email:</label>
-          <input type="email" id="email" placeholder="Email">
+            <div class="radio-group">
+                <label>Sexo:</label>
+                <label for="masculino"><input type="radio" id="masculino" name="sexo"> Masculino</label>
+                <label for="femenino"><input type="radio" id="femenino" name="sexo"> Femenino</label>
+            </div>
 
-          <div class="radio-group">
-              <label>Sexo:</label>
-              <label for="masculino"><input type="radio" id="masculino" name="sexo"> Masculino</label>
-              <label for="femenino"><input type="radio" id="femenino" name="sexo"> Femenino</label>
-          </div>
+            <label for="edad">Edad:</label>
+            <select id="edad">
+                <option value="" disabled selected>Seleccione su Rango de Edad</option>
+                <option value="18-25">18-25</option>
+                <option value="26-35">26-35</option>
+                <option value="36-45">36-45</option>
+                <option value="46-55">46-55</option>
+                <option value="56-65">56-65</option>
+            </select>
 
-          <label for="edad">Edad:</label>
-          <select id="edad">
-              <option value="" disabled selected>Seleccione su Rango de Edad</option>
-              <option value="18-25">18-25</option>
-              <option value="26-35">26-35</option>
-              <option value="36-45">36-45</option>
-              <option value="46-55">46-55</option>
-              <option value="56-65">56-65</option>
-          </select>
-
-          <label for="documento">Suba el Documento PDF</label>
-          <input type="file" id="documento" accept=".pdf">
-
-          <button type="submit">Enviar</button>
+            <label for="documento">Suba el Documento PDF</label>
+            <input type="file" id="documento" accept=".pdf">
+        
+            <button type="submit">Enviar</button>
+      </div>
     </div>
   </div>
 
