@@ -123,24 +123,23 @@
   </div>
   <!-- /container -->
 
-  <div id="member">
-    <div class="container">
-      <hr>
-      <div class="row centered">
-        <div class="col-lg-6 col-lg-offset-3">
-          <form class="form-inline" role="form">
-            <div class="form-group">
-              <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter your email address">
-            </div>
-            <button type="submit" class="btn btn-warning btn-lg">Invite Me!</button>
-          </form>
-        </div>
-        <div class="col-lg-3"></div>
+  <div class="container">
+    <hr>
+    <div class="row centered">
+      <div class="col-lg-6 col-lg-offset-3">
+        <form class="form-inline" role="form">
+          <div class="form-group">
+            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter your email address">
+          </div>
+          <button type="submit" class="btn btn-warning btn-lg">Invite Me!</button>
+        </form>
       </div>
-      <!-- /row -->
-      <hr>
+      <div class="col-lg-3"></div>
     </div>
+    <!-- /row -->
+    <hr>
   </div>
+  
   <!-- /container -->
 
   <div id="about">
@@ -265,6 +264,7 @@
       <div class="col-lg-3"></div>
     </div>
     <!-- /row -->
+    <hr>
   </div>
   <!-- /container -->
 
@@ -310,8 +310,47 @@
 
         </div>
       </div>
+      <hr>
     </div>
   </div>
+
+  <!-- / Formulario de Inscripción-->
+  <div id="member">
+    <div class="formulario-container">
+          <h2 class="centered">Formulario de Inscripción</h2>
+          
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" placeholder="Nombre">
+
+          <label for="apellido">Apellido:</label>
+          <input type="text" id="apellido" placeholder="Apellido">
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" placeholder="Email">
+
+          <div class="radio-group">
+              <label>Sexo:</label>
+              <label for="masculino"><input type="radio" id="masculino" name="sexo"> Masculino</label>
+              <label for="femenino"><input type="radio" id="femenino" name="sexo"> Femenino</label>
+          </div>
+
+          <label for="edad">Edad:</label>
+          <select id="edad">
+              <option value="" disabled selected>Seleccione su Rango de Edad</option>
+              <option value="18-25">18-25</option>
+              <option value="26-35">26-35</option>
+              <option value="36-45">36-45</option>
+              <option value="46-55">46-55</option>
+              <option value="56-65">56-65</option>
+          </select>
+
+          <label for="documento">Suba el Documento PDF</label>
+          <input type="file" id="documento" accept=".pdf">
+
+          <button type="submit">Enviar</button>
+    </div>
+  </div>
+
   <!-- / contact -->
 
   <div id="copyrights">
@@ -321,6 +360,7 @@
       </p>
     </div>
   </div>
+
   <!-- / copyrights -->
 
   <!-- JavaScript Libraries -->
