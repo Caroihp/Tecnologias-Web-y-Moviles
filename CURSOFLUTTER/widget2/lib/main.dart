@@ -51,7 +51,7 @@ class CardsWidget extends StatelessWidget {
             padding: const EdgeInsets.all(8.0), // Añade un poco de espacio alrededor del botón
             child: ElevatedButton(
               onPressed: () {
-                throw 'https://www.ulagos.cl';
+                //throw 'https://www.ulagos.cl';
               },
               child: const Text('Más Información'),
             ),
